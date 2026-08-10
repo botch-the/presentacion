@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservas - CanchaGol</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+    <header class="header">
+        <nav class="navbar">
+            <a href="../index.html" class="logo">⚽ CanchaGol</a>
+            <ul class="nav-links">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="canchas.html">Canchas</a></li>
+                <li><a href="reservas.html" class="active">Reservas</a></li>
+                <li><a href="dashboard.html">Torneos</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h1 class="page-title">Gestión de Reservas</h1>
+
+        <div class="grid-2col">
+            <!-- Formulario de Agendamiento -->
+            <section class="card">
+                <h2 style="margin-bottom: 1.2rem; font-size: 1.4rem;">Agendar o Editar Cita</h2>
+                <form id="formReserva">
+                    <div class="form-group">
+                        <label for="clienteNombre">Nombre Completo</label>
+                        <input type="text" id="clienteNombre" placeholder="Tu nombre" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="clienteEmail">Correo Electrónico</label>
+                        <input type="email" id="clienteEmail" placeholder="tu@correo.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="canchaSelect">Seleccionar Cancha</label>
+                        <select id="canchaSelect" required>
+                            <option value="" disabled selected>Selecciona un escenario...</option>
+                            <option value="Cancha Sintética 1">Cancha Sintética  (FUTBOL  7) 
+                            <option value="Campo Natural Elite">Cancha grama Natural (FUTBOL 9)
+                            <option value="Coliseo Futsal">Coliseo Sintética 
+                            <option value="Cancha Sintética 1">Cancha coliseo</option>
+                            <option value="Campo Natural Elite">cancha Sintética ( FUTBOL 11) </option>
+                            <option value="Coliseo Futsal">cancha Natural (FUTBOL 11) </option>
+                            
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="reservaFecha">Fecha</label>
+                        <input type="date" id="reservaFecha" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="reservaHora">Hora</label>
+                        <input type="time" id="reservaHora" required>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary" style="width: 100%;">Guardar Reserva</button>
+                </form>
+            </section>
+
+            <!-- Tabla de Reservas -->
+            <section class="card">
+                <h2 style="margin-bottom: 1.2rem; font-size: 1.4rem;">Partidos Programados</h2>
+                <div class="table-responsive">
+                    <table class="tabla">
+                        <thead>
+                            <tr>
+                                <th>Cliente</th>
+                                <th>Cancha</th>
+                                <th>Fecha / Hora</th>
+                                <th>Acciones</th>
+                            </tr>
+                        </thead>
+                        <tbody id="bodyTablaReservas">
+                            <!-- Inyección dinámica mediante crud.js -->
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2026 CanchaGol - Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="../js/crud.js"></script>
+    <script src="../js/api.js"></script>
+    <script src="../js/app.js"></script>
+</body>
+</html>

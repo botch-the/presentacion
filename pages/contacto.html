@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - CanchaGol</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+    <header class="header">
+        <nav class="navbar">
+            <a href="../index.html" class="logo">⚽ CanchaGol</a>
+            <ul class="nav-links">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="canchas.html">Canchas</a></li>
+                <li><a href="reservas.html">Reservas</a></li>
+                <li><a href="dashboard.html">Torneos</a></li>
+                <li><a href="contacto.html" class="active">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h1 class="page-title">Contáctanos</h1>
+
+        <div class="grid-2col">
+            <!-- Formulario de Mensaje -->
+            <section class="card">
+                <h2 style="margin-bottom: 1rem; font-size: 1.4rem;">Envíanos un mensaje</h2>
+                <form id="formContacto">
+                    <div class="form-group">
+                        <label for="contactoNombre">Nombre Completo</label>
+                        <input type="text" id="contactoNombre" placeholder="Tu nombre" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="contactoEmail">Correo Electrónico</label>
+                        <input type="email" id="contactoEmail" placeholder="tu@correo.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="contactoMensaje">Mensaje o Sugerencia</label>
+                        <textarea id="contactoMensaje" rows="4" placeholder="Escribe tu mensaje aquí..." required></textarea>
+                    </div>
+
+                    <button type="submit" id="btnEnviarContacto" class="btn btn-primary" style="width: 100%;">Enviar Consulta</button>
+                </form>
+            </section>
+
+            <!-- Widget Clima e Información -->
+            <section class="card" style="display: flex; flex-direction: column; gap: 1.5rem;">
+                    <h2 style="font-size: 1.3rem;">🌤️ Clima en tiempo real</h2>
+                    <p style="font-size: 0.85rem; opacity: 0.9;">Consulta el clima antes de programar tu partido:</p>
+                    <div id="contenedorClima">
+                        <p id="climaCargando" style="margin-top: 0.5rem; font-size: 0.9rem;">Cargando estado del tiempo...</p>
+                    </div>
+
+                <article class="card">
+                    <h2 style="margin-bottom: 1rem; font-size: 1.3rem;">Ubicación & Atención</h2>
+                    <p style="margin-bottom: 0.5rem; color: var(--text-muted);"><strong>Sede:</strong> Barranquilla, Colombia</p>
+                    <p style="margin-bottom: 0.5rem; color: var(--text-muted);"><strong>Dirección:</strong> Calle Principal #45-12</p>
+                    <p style="margin-bottom: 0.5rem; color: var(--text-muted);"><strong>Teléfono:</strong> +57 300 123 4567</p>
+                    <p style="color: var(--text-muted);"><strong>Horario:</strong> Lunes a Domingo: 6:00 AM - 11:00 PM</p>
+                </article>
+            </section>
+
+        
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2026 CanchaGol </p>
+    </footer>
+
+    <script src="../js/crud.js"></script>
+    <script src="../js/api.js"></script>
+    <script src="../js/app.js"></script>
+    <script src="../js/contacto.js"></script>
+</body>
+</html>

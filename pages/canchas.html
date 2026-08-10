@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canchas - CanchaGol</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+    <header class="header">
+        <nav class="navbar">
+            <a href="../index.html" class="logo">⚽ CanchaGol</a>
+            <ul class="nav-links">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="canchas.html" class="active">Canchas</a></li>
+                <li><a href="reservas.html">Reservas</a></li>
+                <li><a href="dashboard.html">Torneos</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h1 class="page-title">Catálogo de Canchas</h1>
+
+        <!-- Filtros de búsqueda -->
+        <section class="filtros-bar">
+            <input type="text" id="inputBuscador" placeholder="Buscar cancha por nombre...">
+            <select id="selectFiltroTipo">
+                <option value="todos">Todos los tipos</option>
+                <option value="sintetica">Sintética</option>
+                <option value="grama">Grama Natural</option>
+                <option value="coliseo">Coliseo / Techada</option>
+            </select>
+        </section>
+
+        <!-- Grilla de canchas (6 Opciones) -->
+        <section class="grid-canchas">
+            <!-- Cancha 1 -->
+            <article class="card tarjeta-cancha" data-tipo="sintetica">
+                <img src="../img/cancha5.jpeg" alt="Cancha Sintética 1" class="card-img">
+                <div class="card-body">
+                    <h3 class="card-title">cancha sintética</h3>
+                    <p class="card-text">Fútbol 11, césped sintético de alta calidad con hidratación.  
+                    </p>
+                    <a href="reservas.html" class="btn btn-primary" style="width: 100%;">Reservar Ahora</a>
+                </div>
+            </article>
+
+            <!-- Cancha 2 -->
+            <article class="card tarjeta-cancha" data-tipo="grama">
+                <img src="../img/cancha6.jpeg" alt="Campo Natural Elite" class="card-img">
+                <div class="card-body">
+                    <h3 class="card-title">cancha grama natural</h3>
+                    <p class="card-text">Fútbol 11, medidas reglamentarias con piso de madera.</p>
+                    <a href="reservas.html" class="btn btn-primary" style="width: 100%;">Reservar Ahora</a>
+                </div>
+            </article>
+
+            <!-- Cancha 3 -->
+            <article class="card tarjeta-cancha" data-tipo="coliseo">
+                <img src="../img/cancha1.jpeg" alt="Coliseo Futsal" class="card-img">
+                <div class="card-body">
+                    <h3 class="card-title">cancha coliceo</h3>
+                    <p class="card-text">Fútbol 5 futsal, medidas reglamentarias con grama sintética.</p>
+                    <a href="reservas.html" class="btn btn-primary" style="width: 100%;">Reservar Ahora</a>
+                </div>
+            </article>
+
+            <!-- Cancha 4 -->
+            <article class="card tarjeta-cancha" data-tipo="sintetica">
+                <img src="../img/cancha4.jpeg" alt="Cancha Sintética 2" class="card-img">
+                <div class="card-body">
+                    <h3 class="card-title">cancha sintética</h3>
+                    <p class="card-text">Fútbol 7 rápido, césped amortiguado ideal para evitar lesiones articulares.</p>
+                    <a href="reservas.html" class="btn btn-primary" style="width: 100%;">Reservar Ahora</a>
+                </div>
+            </article>
+
+            <!-- Cancha 5 -->
+            <article class="card tarjeta-cancha" data-tipo="grama">
+                <img src="../img/cancha3.jpeg" alt="Estadio Auxiliar Grama" class="card-img">
+                <div class="card-body">
+                    <h3 class="card-title">cancha grama natural</h3>
+                    <p class="card-text">Fútbol 9 con banquillos profesionales, vestuarios privados y sistema de drenaje.</p>
+                    <a href="reservas.html" class="btn btn-primary" style="width: 100%;">Reservar Ahora</a>
+                </div>
+            </article>
+
+            <!-- Cancha 6 -->
+            <article class="card tarjeta-cancha" data-tipo="coliseo">
+                <img src="../img/cancha2.jpeg" alt="Arena Techada VIP" class="card-img">
+                <div class="card-body">
+                    <h3 class="card-title">cancha futsal</h3>
+                    <p class="card-text">Futsal bajo techo, ventilación industrial y sonido ambiental.</p>
+                    <a href="reservas.html" class="btn btn-primary" style="width: 100%;">Reservar Ahora</a>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2026 CanchaGol </p>
+    </footer>
+
+    <script src="../js/crud.js"></script>
+    <script src="../js/api.js"></script>
+    <script src="../js/app.js"></script>
+</body>
+</html>
