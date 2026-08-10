@@ -15,7 +15,7 @@
 
 - **Módulo CRUD con LocalStorage:** Permite crear, consultar, actualizar (editar) y eliminar reservas de canchas sin necesidad de una base de datos externa.
 - **Consumo de API Pública:** Integración con la API de OpenWeather para mostrar la temperatura y el estado del clima en tiempo real.
-- **Filtro y Buscador Dinámico:** Filtrado instantáneo por nombre y tipo de cancha (Fútbol 5, 8 o 11) en el catálogo.
+- **Filtro y Buscador Dinámico:** Filtrado instantáneo por nombre y tipo de cancha (Fútbol 5, 9 o 11) en el catálogo.
 - **Modo Oscuro / Claro:** Alternancia de temas visuales mediante botones interactivos con preferencia guardada en el navegador.
 - **Diseño Responsive Nativo:** Construido exclusivamente con CSS Flexbox, CSS Grid y Media Queries sin frameworks como Bootstrap o Tailwind.
 - **Validación de Formularios:** Control previo de entradas (campos vacíos, formato de correo y fechas válidas) en JavaScript.
