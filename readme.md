@@ -28,30 +28,32 @@
 - **Bootstrap 5:** Framework CSS para maquetación responsive, componentes (navbar, cards, modales, formularios) y sistema de grillas.
 - **JavaScript (ES6+):** Programación modular (`import`/`export`), manipulación del DOM, Fetch API y almacenamiento LocalStorage.
 
+---
 
+##  Estructura del Proyecto
+
+```text
 taller_juan_1/
-└──── assets/                  # Recursos estáticos varios (fuentes, extras)
+└── Taller_Final/
     ├── css/
-    │   └── styles.css           # Hoja de estilos global (colores, layout, diseño)
-    ├── icons/                   # Íconos de la interfaz
+    │   └── styles.css      # Hoja de estilos global (colores, layout, diseño)
     ├── img/
-    │   ├── cancha1.jpeg         # Fotos de las canchas deportivas
+    │   ├── cancha1.jpeg    # Fotos de las canchas deportivas
     │   ├── cancha2.jpeg
     │   ├── cancha3.jpeg
     │   ├── cancha4.jpeg
     │   ├── cancha5.jpeg
     │   └── cancha6.jpeg
     ├── js/
-    │   ├── api.js               # Conexión a la API de OpenWeather (para la temperatura y el clima)
-    │   ├── app.js                # Controlador principal / inicializador del sitio
-    │   ├── contacto.js           # Lógica del formulario de contacto
-    │   └── crud.js                # Operaciones CRUD (crear, leer, actualizar, borrar)
+    │   ├── api.js             # Conexión a la API de OpenWeather
+    │   ├── app.js             # Controlador principal / inicializador
+    │   ├── contacto.js        # Lógica del formulario de contacto
+    │   └── crud.js            # Operaciones CRUD (crear, leer, actualizar, borrar)
     ├── pages/
-    │   ├── canchas.html          # Catálogo/listado de canchas disponibles
-    │   ├── contacto.html         # Página de contacto y formulario de contacto
-    │   ├── dashboard.html        # Panel de torneos disponibles
-    │   └── reservas.html         # Página para gestionar/hacer reservas
-    ├── index.html                # Página principal
-    ├── readme.md                  # Documentación del proyecto
-               
-    
+    │   ├── canchas.html       # Catálogo / Listado de canchas disponibles
+    │   ├── contacto.html      # Página de contacto 
+    │   ├── dashboard.html     # Panel de torneos
+    │   └── reservas.html      # Página para gestionar/hacer reservas
+    ├── index.html             # Página principal 
+    └── readme.md              # Documentación del proyecto
+```
