@@ -7,13 +7,13 @@
 ##  Información del Aprendiz
 - **Nombre:** juan hernandez y david ccantillo
 - **Programa:** Análisis y Desarrollo de Software (ADSO)
-- **Institución:** Servicio Nacional de Aprendizaje (SENA)
-- **Ubicación:** Barranquilla, Atlántico - Colombia
+- **Institución:** Colombo aleman (SENA)
+- **Ubicación:** malambo, Atlántico - Colombia
 
 ---
  Características Principales
 
-- **Módulo CRUD con LocalStorage:** Permite crear, consultar, actualizar (editar) y eliminar (cancelar) reservas de canchas sin necesidad de una base de datos externa.
+- **Módulo CRUD con LocalStorage:** Permite crear, consultar, actualizar (editar) y eliminar reservas de canchas sin necesidad de una base de datos externa.
 - **Consumo de API Pública:** Integración con la API de OpenWeather para mostrar la temperatura y el estado del clima en tiempo real.
 - **Filtro y Buscador Dinámico:** Filtrado instantáneo por nombre y tipo de cancha (Fútbol 5, 8 o 11) en el catálogo.
 - **Modo Oscuro / Claro:** Alternancia de temas visuales mediante botones interactivos con preferencia guardada en el navegador.
